@@ -1,0 +1,42 @@
+@import "assets/scss/_breakpoints.scss";
+.login-signup-container {
+  display: flex;
+  padding: 2rem 0rem;
+  justify-content: space-between;
+  margin: 0 10rem;
+  @include lg {
+    margin: 0 4rem;
+  }
+  @include md {
+    margin: 0 2rem;
+  }
+  @include md {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-section {
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .form-section {
+    width: 20rem;
+    @include xm {
+      width: 100%;
+    }
+    button {
+      margin-top: 16px;
+    }
+    .error {
+      font-size: 12px;
+      margin-top: -10px;
+      display: block;
+      color: #f50606;
+    }
+  }
+}

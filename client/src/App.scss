@@ -1,0 +1,26 @@
+@import "assets/scss/_breakpoints.scss";
+
+.btn {
+  border: none;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #d10157;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+main {
+  padding: 0 10rem;
+  @include lg {
+    padding: 0 4rem;
+  }
+  @include md {
+    padding: 0 2rem;
+  }
+  @include xm {
+    padding: 0;
+  }
+}
+button {
+  cursor: pointer;
+}

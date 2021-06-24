@@ -1,0 +1,38 @@
+@mixin label-active {
+  top: -5px;
+  font-size: 11px;
+  left: 0px;
+  color: #62c9d8;
+}
+.form-input {
+  position: relative;
+  width: 98%;
+  height: 1rem;
+  padding: 20px 0;
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #989290;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid #62c9d8;
+    }
+  }
+  .form-input-label {
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 15px;
+    transition: 300ms ease all;
+    color: #79716f;
+    &.input-value {
+      @include label-active();
+    }
+  }
+  > input:focus {
+    ~ .form-input-label {
+      @include label-active();
+    }
+  }
+}

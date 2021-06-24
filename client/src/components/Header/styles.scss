@@ -1,0 +1,70 @@
+@import "assets/scss/_breakpoints.scss";
+
+@mixin nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10rem;
+  box-shadow: 0px 1px 9px 2px #ededed;
+  @include lg {
+    padding: 0 4rem;
+  }
+  @include md {
+    padding: 0 2rem;
+  }
+  @include xm {
+    padding: 0;
+    padding-left: 4px;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    nav {
+      align-self: flex-end;
+      @include xm {
+        display: none;
+      }
+      .nav-list {
+        @include nav-list;
+        margin-bottom: 8px;
+        .nav-item {
+          padding: 8px;
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #79716f;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .login-signup-nav {
+      @include nav-list;
+      @include xm {
+        display: none;
+      }
+      .nav-item {
+        padding: 6px;
+        a {
+          text-decoration: none;
+          font-size: 12px;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .active {
+    color: #d10157 !important;
+  }
+}

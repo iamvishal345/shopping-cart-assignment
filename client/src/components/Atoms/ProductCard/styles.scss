@@ -1,0 +1,26 @@
+.product-card {
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 12px 0px 8px -10px #eeeeee;
+  border-bottom: 2px dotted #eeeeee;
+  .card-header {
+    margin: 0;
+    height: 60px;
+    font-size: 15px;
+  }
+  .card-body {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    padding: 6px 6px 8px;
+    height: 60px;
+    overflow: hidden;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    :nth-child(n) {
+      flex: 1;
+    }
+  }
+}

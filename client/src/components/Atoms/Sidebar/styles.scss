@@ -1,0 +1,57 @@
+@import "assets/scss/_breakpoints.scss";
+.sidebar-container {
+  min-width: 200px;
+  width: 30%;
+  background-color: #eeeeee;
+  @include xm {
+    width: 100%;
+    background-color: #d10157;
+  }
+  .mobile-dropdown {
+    display: none;
+    @include xm {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 1rem;
+      p {
+        margin: 0;
+      }
+      button {
+        background: none;
+        border: none;
+      }
+    }
+  }
+  .menu-list {
+    list-style: none;
+    padding: 0 0 0 0.5rem;
+    margin-top: 0;
+    .menu-item {
+      border-bottom: 1px solid #d1d1d1;
+
+      button {
+        border: none;
+        width: 100%;
+        color: #757575;
+        font-size: 14px;
+        padding: 0;
+        padding: 0.6rem 1rem;
+        text-align: start;
+        &.active {
+          color: #d10157;
+        }
+      }
+    }
+    @include xm {
+      display: none;
+      &.mobile-active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
