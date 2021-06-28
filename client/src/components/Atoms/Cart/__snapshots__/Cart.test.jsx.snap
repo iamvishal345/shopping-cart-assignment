@@ -1,3 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cart should match the snapshot 1`] = `ShallowWrapper {}`;
+exports[`Cart should match the snapshot 1`] = `
+<div
+  className="cart-container"
+>
+  <div
+    aria-label="Show Cart Dropdown"
+    className="cart-icon"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <ForwardRef(SvgCart) />
+    <span
+      id="no-of-items"
+    >
+      2
+       items
+    </span>
+  </div>
+</div>
+`;

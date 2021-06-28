@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products should match the snapshot 1`] = `
+<Products>
+  <div
+    description="Fresh fruits and vegetables and genuine cosmetics and Baby care products"
+    title="Sabka Bazaar - Available Products"
+  />
+  <div
+    className="products-container"
+  >
+    <div
+      className="products-list"
+    />
+  </div>
+</Products>
+`;

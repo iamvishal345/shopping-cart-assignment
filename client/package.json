@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "canned -p 5000 ./server",
-    "coverage": "react-scripts test --coverage"
+    "coverage": "react-scripts test --coverage --watchAll"
   },
   "eslintConfig": {
     "extends": [
@@ -68,13 +68,19 @@
     "@types/jest": "^26.0.23",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "fetch-mock": "^9.11.0",
     "sass": "^1.35.1"
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.jsx",
+      "src/**/*.js",
       "!src/index.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   }
 }

@@ -1,3 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match the snapshot 1`] = `ShallowWrapper {}`;
+exports[`Card should match the snapshot 1`] = `
+<div
+  className="card-container"
+>
+  <div
+    className="image-container"
+  >
+    <img
+      alt="testItem"
+      height="auto"
+      loading="lazy"
+      src="/static/images/logo.png"
+      width="100%"
+    />
+  </div>
+  <div
+    className="details-container"
+  >
+    <h3>
+      testItem
+    </h3>
+    <p>
+      Test Item Description
+    </p>
+    <Link
+      className="btn"
+      to="/products"
+    >
+      Explore 
+      test-item
+    </Link>
+  </div>
+</div>
+`;

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard should match the snapshot 1`] = `
+<div
+  className="product-card"
+>
+  <h4
+    className="card-header"
+  >
+    Fresho Kiwi - Green, 3 pcs
+  </h4>
+  <img
+    alt="Fresho Kiwi - Green, 3 pcs"
+    className="card-image"
+    height="auto"
+    loading="lazy"
+    src="/static/images/products/fruit-n-veg/kiwi-green.jpg"
+    width="100%"
+  />
+  <p
+    className="card-body"
+    title="Kiwis are oval shaped with a brownish outer skin. The flesh is bright green and juicy with tiny, edible black seeds."
+  >
+    Kiwis are oval shaped with a brownish outer skin. The flesh is bright green and juicy with tiny, edible black seeds.
+  </p>
+  <div
+    className="card-footer"
+  >
+    <h6>
+      MRP Rs.
+      87
+    </h6>
+    <button
+      className="btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Buy Now
+    </button>
+  </div>
+</div>
+`;

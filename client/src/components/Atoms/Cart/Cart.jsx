@@ -54,7 +54,7 @@ export const Cart = () => {
                   <div className="products-wrapper">
                     {
                       <>
-                        {productList.map((product) => (
+                        {productList.map((product, i) => (
                           <div key={product.id} className="cart-product-card">
                             <div className="image">
                               <img
@@ -68,6 +68,7 @@ export const Cart = () => {
                               <h5>{product.name}</h5>
                               <div className="actions-container">
                                 <button
+                                  id={`dec-btn-${i}`}
                                   type="button"
                                   className="btn"
                                   onClick={() => updateQuantity(product, -1)}
@@ -76,6 +77,7 @@ export const Cart = () => {
                                 </button>
                                 <b>{product.quantity}</b>
                                 <button
+                                  id={`inc-btn-${i}`}
                                   type="button"
                                   className="btn"
                                   onClick={() => updateQuantity(product, 1)}
@@ -107,19 +109,20 @@ export const Cart = () => {
               )}
 
               <button
+                id="checkout-button"
                 onClick={handleShowDropdown}
                 className={`btn ${productList.length > 0 ? "checkout" : ""}`}
               >
                 {productList.length > 0 ? (
                   <>
-                    <span>Proceed to Checkout</span>{" "}
+                    <span>Proceed to Checkout</span>
                     <span>
                       Rs.
                       {productList.reduce(
                         (acc, curr) => acc + curr.quantity * curr.price,
                         0
                       )}
-                      <span className="arrow"> {">"} </span>
+                      <span className="arrow">{">"}</span>
                     </span>
                   </>
                 ) : (

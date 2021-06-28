@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should match the snapshot 1`] = `
+<div
+  className="sidebar-container"
+>
+  <div
+    className="mobile-dropdown"
+  >
+    <p>
+      All Categories
+    </p>
+    <button
+      aria-label=" Show Dropdown"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 140 140"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
+            fill="white"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+  <aside>
+    <ul
+      className="menu-list "
+    >
+      <li
+        className="menu-item"
+      >
+        <button
+          className="active"
+          onClick={[Function]}
+          type="button"
+        >
+          All Categories
+        </button>
+      </li>
+      <li
+        className="menu-item"
+        key="5b675e5e5936635728f9fc30"
+      >
+        <button
+          className=""
+          onClick={[Function]}
+          type="button"
+        >
+          Beverages
+        </button>
+      </li>
+      <li
+        className="menu-item"
+        key="5b6899123d1a866534f516de"
+      >
+        <button
+          className=""
+          onClick={[Function]}
+          type="button"
+        >
+          Bakery Cakes and Dairy
+        </button>
+      </li>
+      <li
+        className="menu-item"
+        key="5b68994e3d1a866534f516df"
+      >
+        <button
+          className=""
+          onClick={[Function]}
+          type="button"
+        >
+          Beauty and Hygiene
+        </button>
+      </li>
+    </ul>
+  </aside>
+</div>
+`;

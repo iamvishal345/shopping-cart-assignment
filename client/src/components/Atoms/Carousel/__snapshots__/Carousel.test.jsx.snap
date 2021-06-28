@@ -1,3 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`carousel should match the snapshot 1`] = `ShallowWrapper {}`;
+exports[`carousel should match the snapshot 1`] = `
+<div
+  className="car-container"
+>
+  <div
+    className="banner"
+  >
+    <img
+      alt="Independence Day Deal - 25% off on shampoo"
+      height="auto"
+      loading="lazy"
+      src="/static/images/offers/offer1.jpg"
+      width="100%"
+    />
+    <div
+      className="overlay"
+    >
+      <button
+        className="car-btn"
+        id="prev-button"
+        onClick={[Function]}
+      >
+        PREV
+      </button>
+      <div
+        className="current"
+      >
+        <div
+          className="dot active"
+          key="/static/images/offers/offer1.jpg"
+        />
+        <div
+          className="dot "
+          key="/static/images/offers/offer2.jpg"
+        />
+        <div
+          className="dot "
+          key="/static/images/offers/offer3.jpg"
+        />
+      </div>
+      <button
+        className="car-btn"
+        id="next-button"
+        onClick={[Function]}
+      >
+        NEXT
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login and Signup should match the snapshot with login page 1`] = `
+<LoginAndSignup
+  page={
+    Object {
+      "fields": Array [
+        Object {
+          "id": "firstName",
+          "label": "FirstName",
+          "name": "firstName",
+          "type": "text",
+        },
+        Object {
+          "id": "lastName",
+          "label": "LastName",
+          "name": "lastName",
+          "type": "text",
+        },
+        Object {
+          "id": "email",
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+        },
+        Object {
+          "id": "password",
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+        },
+        Object {
+          "id": "confirmPassword",
+          "label": "Confirm Password",
+          "name": "confirmPassword",
+          "type": "password",
+        },
+      ],
+      "header": "Signup",
+      "subHeader": "We do not share your personal details with anyone",
+    }
+  }
+>
+  <Head
+    description="We do not share your personal details with anyone"
+    title="Sabka Bazaar - Signup"
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        meta={
+          Array [
+            Object {
+              "content": "Sabka Bazaar - Signup",
+              "name": "title",
+            },
+            Object {
+              "content": "We do not share your personal details with anyone",
+              "name": "description",
+            },
+            Object {
+              "content": "website",
+              "property": "og:type",
+            },
+            Object {
+              "content": "en_US",
+              "property": "og:locale",
+            },
+            Object {
+              "content": "http://sabkabazaar.com/",
+              "property": "og:url",
+            },
+            Object {
+              "content": "Sabka Bazaar - Signup",
+              "property": "og:title",
+            },
+            Object {
+              "content": "We do not share your personal details with anyone",
+              "property": "og:description",
+            },
+            Object {
+              "content": "/static/images/logo_2x.png",
+              "property": "og:image",
+            },
+            Object {
+              "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+              "property": "twitter:card",
+            },
+            Object {
+              "content": "http://sabkabazaar.com/",
+              "property": "twitter:url",
+            },
+            Object {
+              "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+              "property": "twitter:title",
+            },
+            Object {
+              "content": "We do not share your personal details with anyone",
+              "property": "twitter:description",
+            },
+            Object {
+              "content": "/static/images/logo_2x.png",
+              "property": "twitter:image",
+            },
+          ]
+        }
+        title="Sabka Bazaar - Signup"
+        titleAttributes={Object {}}
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "Sabka Bazaar - Signup",
+                "name": "title",
+              },
+              Object {
+                "content": "We do not share your personal details with anyone",
+                "name": "description",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "en_US",
+                "property": "og:locale",
+              },
+              Object {
+                "content": "http://sabkabazaar.com/",
+                "property": "og:url",
+              },
+              Object {
+                "content": "Sabka Bazaar - Signup",
+                "property": "og:title",
+              },
+              Object {
+                "content": "We do not share your personal details with anyone",
+                "property": "og:description",
+              },
+              Object {
+                "content": "/static/images/logo_2x.png",
+                "property": "og:image",
+              },
+              Object {
+                "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+                "property": "twitter:card",
+              },
+              Object {
+                "content": "http://sabkabazaar.com/",
+                "property": "twitter:url",
+              },
+              Object {
+                "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+                "property": "twitter:title",
+              },
+              Object {
+                "content": "We do not share your personal details with anyone",
+                "property": "twitter:description",
+              },
+              Object {
+                "content": "/static/images/logo_2x.png",
+                "property": "twitter:image",
+              },
+            ]
+          }
+          title="Sabka Bazaar - Signup"
+          titleAttributes={Object {}}
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </Head>
+  <div
+    className="login-signup-container"
+  >
+    <div
+      className="details-section"
+    >
+      <h2>
+        Signup
+      </h2>
+      <p>
+        We do not share your personal details with anyone
+      </p>
+    </div>
+    <form
+      className="form-section"
+      onSubmit={[Function]}
+    >
+      <InputWrapper
+        id="firstName"
+        label="FirstName"
+        name="firstName"
+        setValue={[Function]}
+        type="text"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="firstName"
+            name="firstName"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="firstName"
+          >
+            FirstName
+          </label>
+        </div>
+      </InputWrapper>
+      <InputWrapper
+        id="lastName"
+        label="LastName"
+        name="lastName"
+        setValue={[Function]}
+        type="text"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="lastName"
+            name="lastName"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="lastName"
+          >
+            LastName
+          </label>
+        </div>
+      </InputWrapper>
+      <InputWrapper
+        id="email"
+        label="Email"
+        name="email"
+        setValue={[Function]}
+        type="email"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="email"
+            name="email"
+            onChange={[Function]}
+            type="email"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="email"
+          >
+            Email
+          </label>
+        </div>
+      </InputWrapper>
+      <InputWrapper
+        id="password"
+        label="Password"
+        name="password"
+        setValue={[Function]}
+        type="password"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="password"
+            name="password"
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="password"
+          >
+            Password
+          </label>
+        </div>
+      </InputWrapper>
+      <InputWrapper
+        id="confirmPassword"
+        label="Confirm Password"
+        name="confirmPassword"
+        setValue={[Function]}
+        type="password"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="confirmPassword"
+          >
+            Confirm Password
+          </label>
+        </div>
+      </InputWrapper>
+      <button
+        className="btn"
+        type="submit"
+      >
+        Signup
+      </button>
+    </form>
+  </div>
+</LoginAndSignup>
+`;
+
+exports[`Login and Signup should match the snapshot with signIn Page 1`] = `
+<LoginAndSignup
+  page={
+    Object {
+      "fields": Array [
+        Object {
+          "id": "email",
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+        },
+        Object {
+          "id": "password",
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+        },
+      ],
+      "header": "Login",
+      "subHeader": "Get access to your Orders, Wishlist and Recommendayions",
+    }
+  }
+>
+  <Head
+    description="Get access to your Orders, Wishlist and Recommendayions"
+    title="Sabka Bazaar - Login"
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        meta={
+          Array [
+            Object {
+              "content": "Sabka Bazaar - Login",
+              "name": "title",
+            },
+            Object {
+              "content": "Get access to your Orders, Wishlist and Recommendayions",
+              "name": "description",
+            },
+            Object {
+              "content": "website",
+              "property": "og:type",
+            },
+            Object {
+              "content": "en_US",
+              "property": "og:locale",
+            },
+            Object {
+              "content": "http://sabkabazaar.com/",
+              "property": "og:url",
+            },
+            Object {
+              "content": "Sabka Bazaar - Login",
+              "property": "og:title",
+            },
+            Object {
+              "content": "Get access to your Orders, Wishlist and Recommendayions",
+              "property": "og:description",
+            },
+            Object {
+              "content": "/static/images/logo_2x.png",
+              "property": "og:image",
+            },
+            Object {
+              "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+              "property": "twitter:card",
+            },
+            Object {
+              "content": "http://sabkabazaar.com/",
+              "property": "twitter:url",
+            },
+            Object {
+              "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+              "property": "twitter:title",
+            },
+            Object {
+              "content": "Get access to your Orders, Wishlist and Recommendayions",
+              "property": "twitter:description",
+            },
+            Object {
+              "content": "/static/images/logo_2x.png",
+              "property": "twitter:image",
+            },
+          ]
+        }
+        title="Sabka Bazaar - Login"
+        titleAttributes={Object {}}
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "Sabka Bazaar - Login",
+                "name": "title",
+              },
+              Object {
+                "content": "Get access to your Orders, Wishlist and Recommendayions",
+                "name": "description",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "en_US",
+                "property": "og:locale",
+              },
+              Object {
+                "content": "http://sabkabazaar.com/",
+                "property": "og:url",
+              },
+              Object {
+                "content": "Sabka Bazaar - Login",
+                "property": "og:title",
+              },
+              Object {
+                "content": "Get access to your Orders, Wishlist and Recommendayions",
+                "property": "og:description",
+              },
+              Object {
+                "content": "/static/images/logo_2x.png",
+                "property": "og:image",
+              },
+              Object {
+                "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+                "property": "twitter:card",
+              },
+              Object {
+                "content": "http://sabkabazaar.com/",
+                "property": "twitter:url",
+              },
+              Object {
+                "content": "Sabka Bazaar - Buy fresh Fruits, Vegetables, groceries and beauty products.",
+                "property": "twitter:title",
+              },
+              Object {
+                "content": "Get access to your Orders, Wishlist and Recommendayions",
+                "property": "twitter:description",
+              },
+              Object {
+                "content": "/static/images/logo_2x.png",
+                "property": "twitter:image",
+              },
+            ]
+          }
+          title="Sabka Bazaar - Login"
+          titleAttributes={Object {}}
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </Head>
+  <div
+    className="login-signup-container"
+  >
+    <div
+      className="details-section"
+    >
+      <h2>
+        Login
+      </h2>
+      <p>
+        Get access to your Orders, Wishlist and Recommendayions
+      </p>
+    </div>
+    <form
+      className="form-section"
+      onSubmit={[Function]}
+    >
+      <InputWrapper
+        id="email"
+        label="Email"
+        name="email"
+        setValue={[Function]}
+        type="email"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="email"
+            name="email"
+            onChange={[Function]}
+            type="email"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="email"
+          >
+            Email
+          </label>
+        </div>
+      </InputWrapper>
+      <InputWrapper
+        id="password"
+        label="Password"
+        name="password"
+        setValue={[Function]}
+        type="password"
+        value=""
+      >
+        <div
+          className="form-input"
+        >
+          <input
+            id="password"
+            name="password"
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+          <label
+            className="form-input-label "
+            htmlFor="password"
+          >
+            Password
+          </label>
+        </div>
+      </InputWrapper>
+      <button
+        className="btn"
+        type="submit"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</LoginAndSignup>
+`;

@@ -53,8 +53,47 @@ describe("Cart", () => {
     expect(wrapped.find("#no-of-items").text()).toEqual("2 items");
   });
 
-  it("should show cart over on click of cart button", () => {
-    wrapped.find(".cart-icon").simulate("click", {});
-    expect(wrapped.find("#no-of-items").text()).toEqual("2 items");
+  it("should show cart overlay on click of cart button", () => {
+    wrapped.find(".cart-icon").simulate("click", { preventDefault: jest.fn() });
+    expect(wrapped.find(".overlay").exists()).toBeTruthy();
+  });
+
+  it("should show cart overlay on press of enter key on cart button", () => {
+    wrapped
+      .find(".cart-icon")
+      .simulate("keyup", { preventDefault: jest.fn(), code: "Enter" });
+    expect(wrapped.find(".overlay").exists()).toBeTruthy();
+  });
+
+  // jest.mock("react", () => {
+  //   const ActualReact = jest.requireActual("react");
+  //   return {
+  //     ...ActualReact,
+  //     useContext: () => ({
+  //       products: [],
+  //       updateQuantity: mockUpdateQuantity,
+  //     }),
+  //   };
+  // });
+  it("should show products and continue proceed to checkout whe n products array is not empty", () => {
+    wrapped = shallow(<Cart />);
+    wrapped.find(".cart-icon").simulate("click", { preventDefault: jest.fn() });
+    expect(wrapped.find(".cart-with-products").exists()).toBeTruthy();
+    expect(wrapped.find("#checkout-button").text()).toEqual(
+      "Proceed to CheckoutRs.448>"
+    );
+  });
+
+  it("should increase quantity of item on click of + button", () => {
+    wrapped = shallow(<Cart />);
+    wrapped.find(".cart-icon").simulate("click", { preventDefault: jest.fn() });
+    wrapped.find("#inc-btn-0").simulate("click", { preventDefault: jest.fn() });
+    expect(mockUpdateQuantity).toBeCalledWith(products[0], 1);
+  });
+  it("should decrease quantity of item on click of - button", () => {
+    wrapped = shallow(<Cart />);
+    wrapped.find(".cart-icon").simulate("click", { preventDefault: jest.fn() });
+    wrapped.find("#dec-btn-0").simulate("click", { preventDefault: jest.fn() });
+    expect(mockUpdateQuantity).toBeCalledWith(products[0], -1);
   });
 });
